@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>imicio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <a href='/'>começo</a>
+ <a href='/login'>logar</a>
+<a href='/cadastrar'>cadastrar</a>
+<a href='/sair'>sair</a>
+
+<h1>Pagina de login</h1>
+<p><%= id %>
+<p><%= usuario ? 'ola '+usuario.nome : 'tem que logar' %> </p>
+
+
+<form action="/login" method="post">
+  nome:<br>
+  <input type="text" name="nome"><br>
+  email:<br>
+  <input type="text" name="email"><br>
+  senha:<br>
+   <input type="text" name="senha"><br>
+  
+  <input type='submit'value='salva'>
+</form>
+
+</body>
+</html>
